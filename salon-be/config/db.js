@@ -7,7 +7,8 @@ const MONGO_URI =
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(MONGO_URI); // NO options needed in Mongoose v7+
+    await mongoose.connect(process.env.MONGO_URI, { tls: true });
+ // NO options needed in Mongoose v7+
     console.log(
       ` MongoDB connected (${process.env.MONGO_URI ? "Atlas/Cloud" : "Local"})`
     );
