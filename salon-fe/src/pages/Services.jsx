@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SERVICES_API = "http://localhost:4000/api/services";
-const BOOKINGS_API = "http://localhost:4000/api/bookings";
-const BASE_URL = "http://localhost:4000";
+const SERVICES_API = import.meta.env.VITE_SERVICES_API;
+const BOOKINGS_API = import.meta.env.VITE_BOOKINGS_API;
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 /* 🔹 Page animation */
 const pageTransition = {

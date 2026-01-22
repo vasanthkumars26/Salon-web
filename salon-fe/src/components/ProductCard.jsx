@@ -23,7 +23,7 @@ const ProductCard = ({ product, isAdmin, onEdit, onDelete }) => {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-56 object-cover"
+        className="w-full h-56 object-contain"
       />
 
       {/* CONTENT */}

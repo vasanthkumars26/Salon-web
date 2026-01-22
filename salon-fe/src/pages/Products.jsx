@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import {auth} from "../config/firebase";
 import ProductCard from "../components/ProductCard";
 
-const API = "http://localhost:4000/api/products";
+// const API = "https://salon-server-gurw.onrender.com/api/products";
+const PRODUCTS_API = import.meta.env.VITE_PRODUCTS_API;
+
 const ADMIN_UID = "YuGcmQdwEHd8zeLcsk1Oiq62v9b2";
 
 /* 🔹 Animation Variants */
@@ -45,7 +47,7 @@ const Products = () => {
 
   /* FETCH PRODUCTS */
   const fetchProducts = async () => {
-    const res = await fetch(API);
+    const res = await fetch(PRODUCTS_API);
     const data = await res.json();
     setProducts(data);
   };
@@ -67,7 +69,7 @@ const Products = () => {
     e.preventDefault();
 
     const method = editId ? "PUT" : "POST";
-    const url = editId ? `${API}/${editId}` : API;
+    const url = editId ? `${PRODUCTS_API}/${editId}` : PRODUCTS_API;
 
     const formData = new FormData();
     formData.append("name", form.name);
@@ -93,7 +95,7 @@ const Products = () => {
   };
 
   const handleDelete = async (id) => {
-    await fetch(`${API}/${id}`, { method: "DELETE" });
+    await fetch(`${PRODUCTS_API}/${id}`, { method: "DELETE" });
     fetchProducts();
   };
 
