@@ -4,7 +4,7 @@ const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/orders")
+    fetch("https://salon-server-gurw.onrender.com/api/orders")
       .then((res) => res.json())
       .then(setOrders);
   }, []);

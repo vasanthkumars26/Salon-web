@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:4000/api/enquiries";
+const API = "https://salon-server-gurw.onrender.com/api/enquiries";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

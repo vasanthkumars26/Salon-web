@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 
-const API = "http://localhost:4000/api/bookings";
+const API = "https://salon-server-gurw.onrender.com/api/bookings";
 
 const Dashboard = () => {
   const [bookings, setBookings] = useState([]);

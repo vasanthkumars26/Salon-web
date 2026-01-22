@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:4000/api/services";
-const BASE_URL = "http://localhost:4000";
+const API = "https://salon-server-gurw.onrender.com/api/services";
+const BASE_URL = "https://salon-server-gurw.onrender.com";
 
 const ServicesAdmin = () => {
   const [services, setServices] = useState([]);

@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaDoorClosed } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:4000/api/orders";
-const BASE_URL = "http://localhost:4000";
+const API = "https://salon-server-gurw.onrender.com/api/orders";
+const BASE_URL = "https://salon-server-gurw.onrender.com";
 
 const AdminOrders = () => {
   const navigate = useNavigate();

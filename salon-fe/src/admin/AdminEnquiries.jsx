@@ -9,7 +9,7 @@ const sendEmail = async ({ to, subject, message }) => {
   // Replace with your nodemailer API call
 };
 
-const API = "http://localhost:4000/api/enquiries";
+const API = "https://salon-server-gurw.onrender.com/api/enquiries";
 
 const statusStyles = {
   New: "bg-blue-100 text-blue-700",

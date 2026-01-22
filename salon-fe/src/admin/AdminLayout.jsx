@@ -2,9 +2,9 @@ import { Outlet, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_BOOKINGS = "http://localhost:4000/api/bookings";
-const API_ORDERS = "http://localhost:4000/api/orders";
-const API_ENQUIRIES = "http://localhost:4000/api/enquiries";
+const API_BOOKINGS = "https://salon-server-gurw.onrender.com/api/bookings";
+const API_ORDERS = "https://salon-server-gurw.onrender.com/api/orders";
+const API_ENQUIRIES = "https://salon-server-gurw.onrender.com/api/enquiries";
 
 const AdminLayout = () => {
   const [bookings, setBookings] = useState([]);

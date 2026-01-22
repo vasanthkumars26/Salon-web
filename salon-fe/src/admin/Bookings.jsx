@@ -3,8 +3,8 @@ import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { io } from "socket.io-client";
 
-const API = "http://localhost:4000/api/bookings";
-const SOCKET_URL = "http://localhost:4000";
+const API = "https://salon-server-gurw.onrender.com/api/bookings";
+const SOCKET_URL = "https://salon-server-gurw.onrender.com";
 
 const socket = io(SOCKET_URL);
 
